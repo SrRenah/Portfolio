@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Juan Barros</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #ccc;
+      color: #333;
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background-color: #555;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #222;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    ul li {
+      font-size: 1.2em;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    ul li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .projeto {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .projeto h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .projeto p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s ease;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: #555;
+    }
+
+    form button {
+      width: 100%;
+      padding: 16px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #222;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header p {
+        font-size: 1.2em;
+      }
+
+      section h2 {
+        font-size: 2em;
+      }
+
+      ul {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+
+      header img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://files.oaiusercontent.com/file-yDMSoBpME3gPjqqAoMSO4S1n?se=2025-05-11T20%3A16%3A03Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/jpeg" alt="Macaco">
+    <div class="container">
+      <h1>Olá, eu sou o Juan Barros</h1>
+      <p>Estudando para ser um desenvolvedor | Criando experiências web incríveis.</p>
+      <a href="#contato" class="btn">Entre em contato</a>
+    </div>
+  </header>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <ul>
+        <li>Estudante de Engenharia de Software no UNICEUB</li>
+        <li>Buscando aprimorar meus conhecimentos em JavaScript, CSS e HTML</li>
+        <li>Apaixonado por tecnologia e desenvolvimento web</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>React, Next.js</li>
+        <li>Git, GitHub</li>
+        <li>Figma, UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="projeto">
+        <h3>Projeto 1: Meu Site</h3>
+        <p>Este é o meu site pessoal, onde compartilho meus projetos e experiências no mundo do desenvolvimento frontend.</p>
+      </div>
+      <div class="projeto">
+        <h3>Projeto 2: Aplicação de Lista de Tarefas</h3>
+        <p>Uma aplicação simples de lista de tarefas, criada com React, para ajudar a organizar as atividades diárias.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <form action="#" method="POST">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div style="margin-top: 20px; text-align: center;">
+        <a href="https://www.linkedin.com/in/juan-barros-a44317365/" target="_blank" class="btn" style="background-color: #0A66C2; margin: 10px;">LinkedIn</a>
+        <a href="https://github.com/SrRenah" target="_blank" class="btn" style="background-color: #24292e; margin: 10px;">GitHub</a>
+        <a href="mailto:juanp.barroos@gmail.com" class="btn" style="background-color: #555; margin: 10px;">Me envie um e-mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SrRenah. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
 
